@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "467653133076",
+    "project_id": "stepscape-d85cc",
+    "storage_bucket": "stepscape-d85cc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467653133076:android:f6989f46403657e7673801",
+        "android_client_info": {
+          "package_name": "com.erayerarslan.stapscape"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBANsaEwr_bwg1RmirFD27_OEU6SOVzLaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467653133076:android:abc20b4d9d1e6658673801",
+        "android_client_info": {
+          "package_name": "com.erayerarslan.stepscape"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBANsaEwr_bwg1RmirFD27_OEU6SOVzLaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
