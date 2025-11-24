@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Login Screen Colors -->
+    <color name="gradient_start">#E8D5FF</color>
+    <color name="gradient_end">#BBFFF8</color>
 </resources>
