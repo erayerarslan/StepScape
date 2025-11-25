@@ -56,14 +56,11 @@ class LoginViewModel @Inject constructor(
     private suspend fun saveUserToDatabase() {
         try {
             val currentUser = authRepository.userEmail()
-            val displayName = "" // Google'dan display name alınabilir, şimdilik boş
-            
-            // Kullanıcı veritabanında var mı kontrol et
+            val displayName = ""
             try {
                 userRepository.getUserData().first()
                 Log.d("LoginViewModel", "User already exists in database")
             } catch (e: Exception) {
-                // Kullanıcı yoksa yeni kullanıcı oluştur
                 Log.d("LoginViewModel", "User not found, creating new user in database")
                 val newUser = User(
                     firstName = null,
