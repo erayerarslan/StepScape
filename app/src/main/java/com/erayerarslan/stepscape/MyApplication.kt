@@ -3,6 +3,7 @@ package com.erayerarslan.stepscape
 import android.app.Activity
 import android.app.Application
 import android.os.Bundle
+import com.google.firebase.database.FirebaseDatabase
 import com.jakewharton.threetenabp.AndroidThreeTen
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
@@ -12,6 +13,8 @@ class MyApplication : Application(), Application.ActivityLifecycleCallbacks {
 
     override fun onCreate() {
         super.onCreate()
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true)
+        
         AndroidThreeTen.init(this)
         Timber.plant(Timber.DebugTree())
         registerActivityLifecycleCallbacks(this)

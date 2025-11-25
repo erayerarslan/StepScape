@@ -71,30 +71,5 @@ class UserRepositoryImpl @Inject constructor(
 
 
         emit(Response.Success(user))
-
     }
-    override suspend fun getFavoriteProductIds(): List<String> {
-
-        val uid = auth.currentUser?.uid ?: throw Exception("User not logged in")
-        val favoriteIds = mutableListOf<String>()
-        val userRef = databaseReference.child("Users").child(uid).child("favorites")
-
-        val snapshot = suspendCoroutine<DataSnapshot> { continuation ->
-            userRef.get().addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    continuation.resume(task.result!!)
-                } else {
-                    continuation.resumeWithException(task.exception!!)
-                }
-            }
-        }
-
-        snapshot.children.forEach { child ->
-            favoriteIds.add(child.key ?: "")
-        }
-        return favoriteIds
-    }
-
-
-
 }

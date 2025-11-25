@@ -6,4 +6,12 @@
     <!-- Login Screen Colors -->
     <color name="gradient_start">#E8D5FF</color>
     <color name="gradient_end">#BBFFF8</color>
+    
+    <!-- Home Screen Colors -->
+    <color name="progress_orange">#FF9500</color>
+    <color name="progress_background">#F5F5F5</color>
+    <color name="text_gray">#9E9E9E</color>
+    <color name="graph_line">#2196F3</color>
+    <color name="tab_selected">#FFFFFF</color>
+    <color name="tab_unselected">#F5F5F5</color>
 </resources>
